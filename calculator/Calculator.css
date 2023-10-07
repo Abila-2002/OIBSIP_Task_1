@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:fantasy;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 245, 216);
+}
+
+.calculator {
+    background-color: rgb(7, 78, 59);
+    padding: 40px;
+    border-radius: 28px;
+    width: 342px;
+    height: 90%;
+    box-shadow: 0 0 40px rgba(221, 236, 12, 0.849);
+}
+
+#dis {
+    grid-column: span 4;
+    height: 90px;
+    width: 254px;
+    box-shadow: inset -5px -5px 12px #bbdd41, 5px 5px 12px rgba(0, 0, 0, 16);
+    border-radius: 60px;
+    border-color: #8ecc3e;
+    color: rgb(228, 7, 7);
+    font-size: 38px;
+    text-align: end;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 26px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 17px;
+    padding: 6px;
+}
+
+.button input[type="button"][value="*"] {
+    font-size: 55px; 
+    line-height: 78px;
+}
+
+.button input[type="button"][value="-"] {
+    font-size: 45px; 
+    line-height: 50px;
+}
+
+.button input[type="button"][value="+"] {
+    font-size: 25px; 
+    line-height: 60px;
+}
+
+.button input[type="button"][value="."] {
+    font-size: 40px; 
+    line-height: 1px;
+}
+
+.button input[type="button"][value="/"] {
+    font-size: 25px; 
+    line-height: 1px;
+}
+
+.button input[type="button"] {
+    width: 55px;
+    height: 55px;
+    font-size: 21px;
+    margin: 1px;
+    cursor: pointer;
+    background-color: rgb(211, 241, 91);
+    color: #79060c;
+}
+.button input[type="button"]:hover
+ {
+    background-color: rgb(155, 247, 80);
+ }
+
+ #enter {
+    background-color: rgb(196, 8, 8);
+    width: 120px;
+    font-size:40px;
+    color: whitesmoke;
+    border-color: #bbdd41;
+    transition: background-color 0.3s; 
+}
+
+#enter:hover {
+    background-color: #da7171; 
+}

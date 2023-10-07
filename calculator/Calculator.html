@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="Calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div class ="calculator">
+            <input id="dis" type="text" name="display" placeholder="0">
+            <div class="button">
+            <input type="button" value="Del" onclick="deleteLastCharacter()">
+            <input type="button" value="Clear" onclick="dis.value =''"> 
+            <input type="button" value="/" onclick="dis.value +='/'">
+            <input type="button" value="*" onclick="dis.value +='*'">
+            <input type="button" value="7" onclick="dis.value +='7'">
+            <input type="button" value="8" onclick="dis.value +='8'">
+            <input type="button" value="9" onclick="dis.value +='9'"> 
+            <input type="button" value="+" onclick="dis.value +='+'">    
+            <input type="button" value="4" onclick="dis.value +='4'">
+            <input type="button" value="5" onclick="dis.value +='5'">
+            <input type="button" value="6" onclick="dis.value +='6'"> 
+            <input type="button" value="-" onclick="dis.value +='-'">             
+            <input type="button" value="1" onclick="dis.value +='1'">
+            <input type="button" value="2" onclick="dis.value +='2'">
+            <input type="button" value="3" onclick="dis.value +='3'"> 
+            <input type="button" value="." onclick="dis.value +='.'">
+            <input type="button" value="0" onclick="dis.value +='0'">
+            <input type="button" value="00" onclick="dis.value +='00'">
+            <input type="button" value="=" onclick="calculateResult()" id="enter" >
+            </div>
+        </div>
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
